@@ -1,0 +1,20 @@
+[package]
+name    = "ZamaHEBid"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# TFHE‑RS (boolean + shortint + integer support)
+tfhe = { git = "https://github.com/zama-ai/tfhe-rs", branch = "main", features = ["boolean", "shortint", "integer"] }
+rand = "0.8"
+crossterm = "0.25"
+
+[lib]
+name = "ZamaHEBid"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ZamaHEBid"
+path = "src/main.rs"
+
+
