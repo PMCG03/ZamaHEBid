@@ -2,18 +2,10 @@
 
 use std::collections::HashSet;
 use std::io::{self, Write};
-
 use tfhe::prelude::*;
-use tfhe::{ConfigBuilder, generate_keys, set_server_key, FheUint16};
-
+use tfhe::{ConfigBuilder, generate_keys, set_server_key};
 use ZamaHEBid::auction::Auction;
-
-use std::io::{self, Write};
-use crossterm::{
-    execute,
-    terminal::{Clear, ClearType},
-    cursor::MoveTo,
-};
+use crossterm::{execute, terminal::{Clear, ClearType}, cursor::MoveTo,};
 
 // Clears console on all OS
 fn clear_console() {
