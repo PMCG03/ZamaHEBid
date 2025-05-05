@@ -54,7 +54,7 @@ impl<'a> Auction<'a> {
         let mut current_max = first_enc.clone();
         // Iterate through remaining bids and update the max ciphertext
         for (_, enc_bid) in iter {
-            // homomorphic max operation (result remains encrypted)&#8203;:contentReference[oaicite:20]{index=20}
+            // homomorphic max operation
             current_max = current_max.max(enc_bid);
         }
 
